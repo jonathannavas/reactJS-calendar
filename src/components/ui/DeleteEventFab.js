@@ -4,11 +4,11 @@ import { eventStartDelete } from '../../actions/events';
 
 export const DeleteEventFab = () => {
 
-    const {activeEvent} = useSelector(state => state.calendar);
+    // const {activeEvent} = useSelector(state => state.calendar);
     const dispatch = useDispatch();
 
     const handleDelete = () => {
-        dispatch( eventStartDelete(activeEvent) );
+        dispatch( eventStartDelete() );
     }
 
     return (
